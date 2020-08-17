@@ -3,6 +3,8 @@
   --verdeOpacoAzulado: #0e7d6c;  
   --Anaranjadito: #faa634;  
   --blancoGrisaceo: #e8e7e5;  
+  --letraParrafos: 'Montserrat', sans-serif;
+  --letraEnlaces: 'Anton', sans-serif;
 }
 body{
   background-color: var(--blancoGrisaceo);
