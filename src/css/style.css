@@ -2,8 +2,66 @@
   --AzulClaro: #3cb2a2;  
   --verdeOpacoAzulado: #0e7d6c;  
   --Anaranjadito: #faa634;  
-  --blancoGrisaceo: #e8e7e5;  
+  --blancoGrisaceo: #e8e7e5;
+  --sombra: rgba(0, 0, 0, 0.5);
+  --sombraClara: rgba(0, 0, 0, 0.25);
+}
+*{
+  outline: none !important;
 }
 body{
   background-color: var(--blancoGrisaceo);
 }
+#contact{
+  
+}
+#contact > h3{
+  margin: 0;
+  background-color: var(--AzulClaro);
+  font-weight: bold;
+  color: #fff;
+}
+#contact > .contact-container{
+  display: grid;
+  grid-template-columns: minmax(250px, 950px);
+  justify-content: center;
+  background-color: var(--verdeOpacoAzulado);
+}
+#contact > .contact-container > form{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  column-gap: 50px;
+}
+#contact > .contact-container > form label,
+#contact > .contact-container > form textarea::placeholder{
+  color: #fff;
+  font-weight: bold;
+}
+#contact > .contact-container > form input,
+#contact > .contact-container > form textarea{
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+#contact > .contact-container > form button{
+  padding: 5px 70px;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid var(--Anaranjadito);
+}
+#contact > .contact-container > form textarea{
+  padding: 10px;
+  height: 200px;
+  background-color: var(--sombraClara);
+  resize: none;
+}
+@media screen and (min-width: 768px){
+  #contact > .contact-container > form{
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact > .contact-container > form > .md-form:nth-of-type(5),
+  #contact > .contact-container > form > .boton-enviar{
+    grid-column: 2 span;
+  }
+} 

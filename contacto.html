@@ -25,7 +25,46 @@
   </header>
 
   <main>
-    
+    <section id="contact">
+
+      <h3 class="text-center p-3">Contactanos</h3>
+
+      <div class="contact-container pt-3 px-3 px-sm-5">
+
+        <form action="enviar.php" method="post">
+          
+          <div class="md-form">
+            <input type="text" name="nombre" id="form41" class="form-control">
+            <label for="form41" class="">Nombre</label>
+          </div>
+
+          <div class="md-form">
+            <input type="text" name="email" id="form52" class="form-control">
+            <label for="form52" class="">E-mail</label>
+          </div>
+  
+          <div class="md-form">
+            <input type="number" name="telefono" id="form51" class="form-control">
+            <label for="form51" class="">Teléfono</label>
+          </div>
+
+          <div class="md-form">
+            <input type="text" name="asunto" id="form51" class="form-control">
+            <label for="form51" class="">Asunto</label>
+          </div>
+          
+          <div class="md-form">
+            <textarea name="mensaje" type="text" placeholder="Mensaje" class="md-textarea form-control"></textarea>
+          </div>
+  
+          <div class="boton-enviar text-center mb-4 mt-4">
+            <button type="submit" class="waves-effect waves-light">Enviar</button>
+          </div>
+  
+        </form>
+
+      </div>
+    </section>
   </main>
 
   <footer>
