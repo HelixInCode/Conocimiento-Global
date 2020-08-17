@@ -9,6 +9,7 @@ body{
     display: grid;
     grid-template-columns: minmax(300px, 1200px);
     justify-content: center;
+    padding: 30px;
 }
 
 #nosotros > .contenedor-principal >.contenedor-subtitulo{
@@ -23,13 +24,13 @@ body{
     font-size: 40px;
 }
 #nosotros > .contenedor-principal >.contenedor-secundario{
-    margin-top: 30px;
+    margin-top: 15px;
     display: grid;
-    grid-template-columns: minmax(300px, 650px) minmax(300px, 650px);
-    gap: 10px;
+    grid-template-columns: minmax(300px, 650px);
+    gap: 50px;
 }
 #nosotros > .contenedor-principal >.contenedor-secundario > .descripcion{
-    padding-top: 55px;
+    padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -71,9 +72,32 @@ body{
     -webkit-filter: drop-shadow(4px 4px 3px black);
             filter: drop-shadow(4px 4px 3px black);
 }
+#nosotros > .contenedor-principal >.contenedor-secundario > .imagen{
+    grid-row: 1/2;
+}
 #nosotros > .contenedor-principal >.contenedor-secundario > .imagen > img{
     width: 100%;
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="3" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.7)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
     -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .7));
             filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .7));
+}
+
+@media screen and (min-width: 650px){
+    #nosotros > .contenedor-principal{
+        padding: 10px;
+    }
+    #nosotros > .contenedor-principal >.contenedor-secundario{
+        grid-template-columns: minmax(300px, 650px) minmax(300px, 650px);
+        gap: 10px;
+        margin-top: 30px;
+    }
+    #nosotros > .contenedor-principal >.contenedor-secundario > .descripcion{
+        padding-top: 55px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    #nosotros > .contenedor-principal >.contenedor-secundario > .imagen{
+        grid-column: 2/3;
+    }
+    
 }
