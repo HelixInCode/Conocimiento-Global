@@ -1,3 +1,79 @@
+:root{ /*y SUBTITULOS*/
+}
 body{
   background-color: #e8e7e5;
+}
+
+/*Section Nosotros*/
+#nosotros > .contenedor-principal{
+    display: grid;
+    grid-template-columns: minmax(300px, 1200px);
+    justify-content: center;
+}
+
+#nosotros > .contenedor-principal >.contenedor-subtitulo{
+    font-family: 'Anton', sans-serif;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px solid #faa634;
+    margin-top: 30px;
+}
+#nosotros > .contenedor-principal >.contenedor-subtitulo > h3{
+    font-size: 40px;
+}
+#nosotros > .contenedor-principal >.contenedor-secundario{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: minmax(300px, 650px) minmax(300px, 650px);
+    gap: 10px;
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .descripcion{
+    padding-top: 55px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .descripcion > .acciones{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    justify-content: center;
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .descripcion > .acciones > .mas-info{
+    background-color: #0e7d6c;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    border-radius: 5px;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="3" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(3px 3px 3px black);
+            filter: drop-shadow(3px 3px 3px black);
+    width: 150px;
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .descripcion > .acciones > .mas-info:hover{
+    background-color: #3cb2a2;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="3" /><feOffset dx="5" dy="5" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(4px 4px 3px black);
+            filter: drop-shadow(4px 4px 3px black);
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .descripcion > .acciones > .redes > img{
+    width: 60px;
+    margin-left: 20px;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="3" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(3px 3px 3px black);
+            filter: drop-shadow(3px 3px 3px black);
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .descripcion > .acciones > .redes > img:hover{
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="3" /><feOffset dx="5" dy="5" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(4px 4px 3px black);
+            filter: drop-shadow(4px 4px 3px black);
+}
+#nosotros > .contenedor-principal >.contenedor-secundario > .imagen > img{
+    width: 100%;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="3" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.7)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .7));
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .7));
 }
