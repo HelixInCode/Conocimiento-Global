@@ -1,0 +1,9 @@
+:root{
+  --AzulClaro: #3cb2a2;  
+  --verdeOpacoAzulado: #0e7d6c;  
+  --Anaranjadito: #faa634;  
+  --blancoGrisaceo: #e8e7e5;  
+}
+body{
+  background-color: var(--blancoGrisaceo);
+}
