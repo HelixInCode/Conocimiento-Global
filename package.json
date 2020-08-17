@@ -1,0 +1,23 @@
+{
+  "name": "conocimiento-global",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelixInCode/Conocimiento-Global.git"
+  },
+  "author": "HelixInCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelixInCode/Conocimiento-Global/issues"
+  },
+  "homepage": "https://github.com/HelixInCode/Conocimiento-Global#readme",
+  "devDependencies": {
+    "postcss-cli": "^7.1.1",
+    "postcss-cssnext": "^3.1.0"
+  }
+}
