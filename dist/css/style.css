@@ -15,11 +15,14 @@ header{
 }
 #contact-nav{
   z-index: 9999;
+  border-bottom: 3px solid yellow;
   background-color: #0e7d6c;
   position: absolute;
   top: -100%;
   left: 0;
   right: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -29,14 +32,25 @@ header{
 #contact-nav > ul{
   margin: 0;
   padding: 0;
+  list-style: none;
   display: grid;
-  grid-template-columns: 1fr repeat(2, auto);
+}
+#contact-nav > .social-networks-left{
+  grid-template-columns: auto;
+}
+#contact-nav > .social-networks-right{
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: 36px;
   gap: 15px;
-  list-style: none;
 }
 #contact-nav > ul > li{
   padding: 5px 10px;
+}
+#contact-nav > ul > li:hover{
+  background-color: #fff;
+}
+#contact-nav > ul > li:hover > a{
+  color: #000;
 }
 #contact-nav > ul > li > a{
   font-family: 'Anton', sans-serif;
@@ -45,15 +59,16 @@ header{
 nav{
   position: fixed;
   z-index: 9999;
-  top: 36px;
+  top: 39px;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #fff;
-  max-height: 42px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  min-height: 42px;
+  max-height: 50px;
+  -webkit-transition: .2s;
+  transition: .2s;
   /* background-image: linear-gradient(to right, color(var(--verdeOpacoAzulado) alpha(81.6%)), 
                                               color(var(--AzulClaro)  alpha(81.6%))); */
 }
@@ -62,10 +77,15 @@ nav.top-nav{
   max-height: 58px;
 }
 nav.top-nav > .img-container{
-  padding: 5px 0;
+  padding: 3px 0;
 }
 nav > .img-container{
-  max-width: 50px;
+  display: grid;
+  grid-template-columns: minmax(10px, 50px) auto;
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Anton', sans-serif;
 }
 nav > .img-container > img{
   height: 100%;
@@ -79,7 +99,7 @@ nav > .menu-items{
   padding: 0;
   display: none;
   grid-template-columns: repeat(4, auto);
-  gap: 40px;
+  gap: 20px;
   list-style: none;
 }
 nav > .menu-items > li{
@@ -381,8 +401,11 @@ nav > .menu-items > li > a:hover{
 }
 
 @media screen and (min-width: 650px){
-  #contact-nav > ul{
+  #contact-nav > .social-networks-right{
     margin-right: 25px;
+  }
+  nav{
+    justify-content: space-between;
   }
   nav > .img-container{
     margin-left: 25px;
@@ -407,6 +430,10 @@ nav > .menu-items > li > a:hover{
   
 }
 @media screen and (min-width: 768px){ 
+  nav > .menu-items{
+    gap: 40px;
+  }
+
   #contact > .contact-container > form{
     grid-template-columns: 1fr 1fr;
   }
