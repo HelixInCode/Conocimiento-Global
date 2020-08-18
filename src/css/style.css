@@ -234,6 +234,7 @@ nav > .menu-items > li > a:hover{
 }
 #servicios > .contenedor-subtitulo > h3{
   font-size: 40px;
+  margin-top: 30px;
 }
 #servicios > .service-container{
   margin-top: 30px;
@@ -312,6 +313,9 @@ nav > .menu-items > li > a:hover{
 #servicios > .service-container > .service-item > a:hover{
   background-color: #f8b352;
   filter: drop-shadow(4px 4px 3px rgb(41, 41, 41));
+}
+#contact{
+  font-family: var(--letraEnlaces);
 }
 
 #contact > h3{
