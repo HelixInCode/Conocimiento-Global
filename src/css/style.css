@@ -44,6 +44,7 @@ header{
 }
 #contact-nav > .social-networks-left{
   grid-template-columns: auto;
+  justify-items: left;
 }
 #contact-nav > .social-networks-right{
   grid-template-columns: repeat(2, auto);
@@ -86,6 +87,7 @@ nav.top-nav > .img-container{
   padding: 3px 0;
 }
 nav > .img-container{
+  color: #000;
   display: grid;
   grid-template-columns: minmax(10px, 50px) auto;
   gap: 5px;
@@ -314,14 +316,14 @@ nav > .menu-items > li > a:hover{
   background-color: #f8b352;
   filter: drop-shadow(4px 4px 3px rgb(41, 41, 41));
 }
+
 #contact{
   font-family: var(--letraEnlaces);
+  margin-top: 23px;
 }
-
 #contact > h3{
   margin: 0;
   background-color: var(--AzulClaro);
-  font-weight: bold;
   color: #fff;
 }
 #contact > .contact-container{
@@ -339,7 +341,6 @@ nav > .menu-items > li > a:hover{
 #contact > .contact-container > form label,
 #contact > .contact-container > form textarea::placeholder{
   color: #fff;
-  font-weight: bold;
 }
 #contact > .contact-container > form input,
 #contact > .contact-container > form textarea{
@@ -348,7 +349,6 @@ nav > .menu-items > li > a:hover{
 }
 #contact > .contact-container > form button{
   padding: 5px 70px;
-  font-weight: bold;
   color: #fff;
   background-color: transparent;
   border: 3px solid var(--Anaranjadito);
