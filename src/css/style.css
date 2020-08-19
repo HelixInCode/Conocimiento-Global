@@ -374,6 +374,7 @@ nav > .hamburger-btn{
   background-color: var(--Anaranjadito);
   filter: drop-shadow(2px 2px 3px black);
   justify-self: center;
+  text-align: center;
 }
 #servicios > .service-container > .service-item > a:hover{
   background-color: #f8b352;
