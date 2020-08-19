@@ -144,6 +144,31 @@ nav > .menu-items > li > a:hover{
   width: 100%;
   height: 100%;
 }
+.index-carousel> .carousel-inner > .carousel-item > .overlay-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: var(--letraEnlaces);
+  background-color: var(--sombra);
+  display: grid;
+  color: #fff;
+  grid-template-columns: minmax(200px, 500px);
+  grid-auto-columns: auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+.index-carousel .overlay-img > p{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+}
+.index-carousel .overlay-img > p > span{
+  padding: 0 25px;
+  background-color: var(--Anaranjadito);
+}
 
 #crecimiento{
     width: 100%;
@@ -189,16 +214,17 @@ nav > .menu-items > li > a:hover{
   justify-content: center;
 }
 #nosotros > .nosotros-container > .descripcion > .acciones > .mas-info{
-  background-color: var(--verdeOpacoAzulado);
-  padding: 10px;
-  text-decoration: none;
+  width: 150px;
+  border-radius: 5px;
   color: white;
   letter-spacing: 1px;
   font-size: 25px;
   font-family: var(--letraEnlaces);
-  border-radius: 5px;
+  background-color: var(--verdeOpacoAzulado);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   filter: drop-shadow(3px 3px 3px black);
-  width: 150px;
 }
 #nosotros > .nosotros-container > .descripcion > .acciones > .mas-info:hover{
   background-color: var(--AzulClaro);
@@ -360,6 +386,18 @@ nav > .menu-items > li > a:hover{
   resize: none;
 }
 
+@media screen and (min-width: 576px){
+  .index-carousel .overlay-img > p{
+    font-size: 3.5em;
+    text-align: start;
+  }
+  .index-carousel> .carousel-inner > .carousel-item > .overlay-img{
+    justify-content: end;
+  }
+  .index-carousel> .carousel-inner > .carousel-item:nth-of-type(3) > .overlay-img{
+    justify-content: start;
+  }
+}
 @media screen and (min-width: 650px){
   #contact-nav > .social-networks-right{
     margin-right: 25px;
