@@ -15,7 +15,7 @@ header{
 }
 #contact-nav{
   z-index: 9999;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid #faa634;
   background-color: #0e7d6c;
   position: absolute;
   top: -100%;
@@ -525,6 +525,6 @@ nav > .hamburger-btn{
 } 
 @media screen and (min-width: 850px){
   #servicios > .service-container{
-    grid-template-columns: repeat(3, minmax(200px, 500px));
+    grid-template-columns: repeat(2, minmax(200px, 600px));
   }
 }
