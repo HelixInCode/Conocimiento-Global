@@ -468,6 +468,21 @@ nav > .hamburger-btn{
   background-color: rgba(0, 0, 0, .25);
   resize: none;
 }
+#footer{
+  background-color: #0e7d6c;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.titulos-footer{
+  text-shadow: 1px 1px 1px #faa634;
+}
+#img-footer{
+  width: 180px;
+}
+.links-footer{
+  font-size: 20px;
+}
 
 @media screen and (min-width: 576px){
   .index-carousel .overlay-img > p{
@@ -527,4 +542,9 @@ nav > .hamburger-btn{
   #servicios > .service-container{
     grid-template-columns: repeat(2, minmax(200px, 600px));
   }
+  #img-footer{
+    width: 200px;
+    margin-left: 30%;
+  }
 }
+
