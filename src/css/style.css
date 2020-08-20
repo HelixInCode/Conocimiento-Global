@@ -438,6 +438,9 @@ nav > .hamburger-btn{
 .links-footer{
   font-size: 20px;
 }
+.margen-top{
+  margin-top: 50px;
+}
 
 @media screen and (min-width: 576px){
   .index-carousel .overlay-img > p{
