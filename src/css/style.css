@@ -1,6 +1,6 @@
 :root{
   --AzulClaro: #3cb2a2;  
-  --verdeOpacoAzulado: #0e7d6c;  
+  --verdeOpacoAzulado: #0b6154;  
   --Anaranjadito: #faa634;  
   --blancoGrisaceo: #e8e7e5;  
   --sombra: rgba(0, 0, 0, 0.5);
@@ -74,7 +74,7 @@ nav{
   justify-content: center;
   background-color: #fff;
   min-height: 42px;
-  max-height: 50px;
+  max-height: 60px;
   transition: .2s;
   /* background-image: linear-gradient(to right, color(var(--verdeOpacoAzulado) alpha(81.6%)), 
                                               color(var(--AzulClaro)  alpha(81.6%))); */
@@ -96,7 +96,13 @@ nav > .img-container{
   font-family: var(--letraEnlaces);
 }
 nav > .img-container > img{
-  height: 100%;
+  height: 80%;
+}
+nav > .img-container > div > p{
+  font-size: 9px;
+  text-align: right;
+  font-family: var(--letraParrafos);
+  font-weight: 800;
 }
 nav > .menu-items.padding-12{
   padding: 8px 0;
@@ -243,6 +249,12 @@ nav > .hamburger-btn{
 }
 #nosotros > .nosotros-container > .descripcion p{
   margin: 0;
+  font-family: var(--letraParrafos);
+  font-weight: 700;
+}
+#nosotros > .nosotros-container > .descripcion p span{
+  background: #faa634;
+  padding: 3px;
 }
 #nosotros > .nosotros-container > .descripcion > .acciones{
   display: grid;
@@ -313,7 +325,7 @@ nav > .hamburger-btn{
   padding: 10px;
   padding-bottom: 30px;
   border-radius: 10px;
-  background-color: var(--AzulClaro);
+  background-color: #067565 ;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -366,6 +378,8 @@ nav > .hamburger-btn{
   margin: 0;
   font-family: var(--letraParrafos);
   font-weight: 550;
+  padding: 10px;
+  font-size: 20px;
 }
 #servicios > .service-container > .service-item > a{
   padding:10px;
@@ -497,6 +511,10 @@ nav > .hamburger-btn{
   }
 } 
 @media screen and (min-width: 850px){
+  #servicios{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   #servicios > .service-container{
     grid-template-columns: repeat(2, minmax(200px, 600px));
   }
