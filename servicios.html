@@ -24,22 +24,26 @@
 <body>
 
   <header>
-    <section id="contact-nav" class="top-nav px-4">
+    <section id="contact-nav" class="top-nav px-sm-4">
       <ul class="social-networks-left">
         <li>
           <a href="https://www.facebook.com/cg.cursosdigitales">
-            <i class="fab fa-facebook" style="margin-right: 10px;"></i>
-            /cg.cursosdigitales</a>
+            <i class="fab fa-facebook mr-0 mr-sm-2"></i>
+            <span>/cg.cursosdigitales</span>
+          </a>
         </li>
       </ul>
 
       <ul class="social-networks-right">
         <li>
           <a href="#?">
-            <i class="far fa-envelope" style="margin-right: 10px; color: white;"></i>
-            Correo</a>
+            <i class="far fa-envelope mr-0 mr-sm-2"></i>
+            <span class="d-inline-block d-sm-none">Correo</span>
+            <span class="d-none d-sm-inline-block">aserfrgr@gmail.com</span>
+          </a>
         </li>
       </ul>
+      
     </section>
 
     <nav id="nav" class="py-1 px-4">
@@ -47,7 +51,7 @@
         <img src="img/Conocimiento-Global-icon.png" alt="">
         <div>
           <span>Conocimiento Global</span>
-          <p>Cursos Digitales</p>
+          <p class="m-0">Cursos Digitales</p>
         </div>
         
       </a>
@@ -76,83 +80,115 @@
   <main>
     <section id="servicios" class="px-2 px-lg-5">
     
-        <div class="contenedor-subtitulo">
-            <h3>Servicios</h3>
+      <div class="contenedor-subtitulo">
+        <h3>Servicios</h3>
+      </div>
+
+      <div class="service-container">
+
+          <div class="service-item">
+              
+              <div class="imagen rounded-circle" >
+                  <img src="./img/dinero.png"  alt="">
+              </div>
+
+              <div class="contenedor-info">
+                  <h3>Dinero</h3>
+                  <p>Aprende a generar ingresos a través de internet, mediante herramientas digitales que puedes utilizar desde cualquier parte del mundo, potenciando tu negocio o aprendiendo uno nuevo.</p>
+              </div>
+              
+              <a class="acciones" href="#?">
+                  Quiero saber mas
+              </a>
+
+          </div>
+
+          <div class="service-item">
+              
+              <div class="imagen rounded-circle" >
+                  <img src="./img/cremiento-personal.png" id="crecimiento"  alt="">
+              </div>
+
+              <div class="contenedor-info">
+                  <h3>Desarrollo Personal</h3>
+                  <p>Incluye actividades que impulsan el desarrollo de las habilidades personales y de los propios potenciales, contribuyendo a la realización de sueños y aspiraciones.</p>
+              </div>
+              
+              <a class="acciones" href="#?">
+                  Quiero saber mas
+              </a>
+
+          </div>
+
+
+      </div>
+
+    </section>
+    <section id="destacados" class="px-2 px-lg-5">
+    
+      <div class="contenedor-subtitulo my-4">
+        <h3>Cursos Destacados</h3>
+      </div>
+
+      <section id="carouselExampleFade" class="carousel slide cursos-carousel carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+  
+          <div class="carousel-item active">
+            <!-- <img src="img/back-1.png" class="d-block w-100" alt="..."> -->
+            <div class="course-item"></div>
+            <div class="course-item"></div>
+            <div class="course-item"></div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="course-item"></div>
+            <div class="course-item"></div>
+            <div class="course-item"></div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="course-item"></div>
+            <div class="course-item"></div>
+            <div class="course-item"></div>
+          </div>
         </div>
-
-        <div class="service-container">
-
-            <div class="service-item">
-                
-                <div class="imagen rounded-circle" >
-                    <img src="./img/dinero.png"  alt="">
-                </div>
-
-                <div class="contenedor-info">
-                    <h3>Dinero</h3>
-                    <p>Aprende a generar ingresos a través de internet, mediante herramientas digitales que puedes utilizar desde cualquier parte del mundo, potenciando tu negocio o aprendiendo uno nuevo.</p>
-                </div>
-                
-                <a class="acciones" href="#?">
-                    Quiero saber mas
-                </a>
-
-            </div>
-
-            <div class="service-item">
-                
-                <div class="imagen rounded-circle" >
-                    <img src="./img/cremiento-personal.png" id="crecimiento"  alt="">
-                </div>
-
-                <div class="contenedor-info">
-                    <h3>Desarrollo Personal</h3>
-                    <p>Incluye actividades que impulsan el desarrollo de las habilidades personales y de los propios potenciales, contribuyendo a la realización de sueños y aspiraciones.</p>
-                </div>
-                
-                <a class="acciones" href="#?">
-                    Quiero saber mas
-                </a>
-
-            </div>
-
-
-        </div>
-
-        <div id="destacados" class="contenedor-subtitulo my-4">
-            <h3>Cursos Destacados</h3>
-        </div>
+  
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  
+      </section>
 
     </section>
 
   </main>
   <!-- Footer -->
-<footer id="footer" class="page-footer font-small pt-4">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
+  <footer id="footer" class="page-footer font-small pt-2">
 
     <!-- Grid row -->
-    <div class="row" style="padding: 30px;">
-
+    <div class="footer-container text-center text-md-left">
+  
       <!-- Grid column -->
-      <div class="columna col-md-6 mt-md-0 mt-3">
-
+      <div class="img-container">
+  
+        <img src="./img/logo2.png" alt="">
         <!-- Content -->
-        <img id="img-footer" src="./img/logo2.png" alt="">
         <h3 class="text-center" >Conocimiento Global</h3>
-
+  
       </div>
       <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
+  
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
+      <div class="">
+  
         <!-- Links -->
         <h3 class="text-uppercase titulos-footer">Secciones</h3>
-
+  
         <ul class="links-footer list-unstyled ">
           <li>
             <a href="index.html">Home</a>
@@ -170,49 +206,45 @@
             <a href="contacto.html">Contacto</a>
           </li>
         </ul>
-
+  
       </div>
       <!-- Grid column -->
-
+  
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
+      <div class="">
+  
         <!-- Links -->
         <h3 class="text-uppercase titulos-footer">Contacto</h3>
-
+  
         <ul class="list-unstyled links-footer">
           <li>
-            <a href="#!">
+            <a href="https://www.facebook.com/cg.cursosdigitales">
               <i class="fas fa-at"></i>
               aserfrgr@gmail.com
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/cg.cursosdigitales">
+            <a href="#!">
               <i class="fab fa-facebook"></i>
               /cg.cursosdigitales
             </a>
           </li>
         </ul>
-
-
+  
       </div>
       <!-- Grid column -->
-
+  
     </div>
     <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> onlinemercadodigital.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> onlinemercadodigital.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
   <!-- jQuery -->
   <script type="text/javascript" src="dist/js/jquery.min.js"></script>

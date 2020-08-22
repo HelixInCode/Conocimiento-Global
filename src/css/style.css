@@ -47,7 +47,7 @@ header{
   justify-items: left;
 }
 #contact-nav > .social-networks-right{
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: auto;
   grid-template-rows: 36px;
   gap: 15px;
 }
@@ -57,13 +57,18 @@ header{
 #contact-nav > ul > li:hover{
   background-color: #fff;
 }
-#contact-nav > ul > li:hover > a{
-  color: #000;
-}
+
 #contact-nav > ul > li > a{
   font-family: var(--letraEnlaces);
   color: #fff;
 }
+#contact-nav > ul > li:hover > a{
+  color: #000;
+}
+#contact-nav > ul > li > a > i{
+  /* margin-right: 5px; */
+}
+
 nav{
   position: fixed;
   z-index: 9999;
@@ -96,7 +101,7 @@ nav > .img-container{
   font-family: var(--letraEnlaces);
 }
 nav > .img-container > img{
-  height: 80%;
+  height: 100%;
 }
 nav > .img-container > div > p{
   font-size: 9px;
@@ -297,21 +302,25 @@ nav > .hamburger-btn{
 }
 /*Section Servicios*/
 
-#servicios{
+#servicios,
+#destacados{
   display: grid;
   grid-template-columns: minmax(300px, 1200px);
   justify-content: center;
   padding: 30px;
 }
-#servicios > .contenedor-subtitulo{
+#servicios > .contenedor-subtitulo,
+#destacados > .contenedor-subtitulo{
   color: black;
   font-family: var(--letraEnlaces);
   border-bottom: 4px solid var(--Anaranjadito);
   justify-self: center;
 }
-#servicios > .contenedor-subtitulo > h3{
+#servicios > .contenedor-subtitulo > h3,
+#destacados > .contenedor-subtitulo > h3{
   font-size: 40px;
   margin-top: 30px;
+  text-align: center;
 }
 #servicios > .service-container{
   margin-top: 30px;
@@ -337,6 +346,30 @@ nav > .hamburger-btn{
   box-shadow: 7px 7px 7px rgb(66, 66, 66);
 }
 
+#destacados{
+}
+.cursos-carousel{
+  
+}
+.cursos-carousel > .carousel-inner{
+  
+}
+.cursos-carousel > .carousel-inner > .carousel-item{
+  height: 630px;
+  display: grid;
+  grid-template-columns: minmax(100px, 390px);
+  gap: 15px;
+  justify-content: center;
+}
+.cursos-carousel > .carousel-inner > .carousel-item > .course-item{
+  background-color: var(--Anaranjadito);
+}
+.cursos-carousel > .carousel-inner > .carousel-item:nth-of-type(2) > .course-item{
+  background-color: var(--verdeOpacoAzulado);
+}
+.cursos-carousel > .carousel-inner > .carousel-item:nth-of-type(3) > .course-item{
+  background-color: var(--sombra);
+}
 @keyframes sombrea{
   from{
     box-shadow: 2px 2px 2px rgb(83, 83, 83);
@@ -443,13 +476,32 @@ nav > .hamburger-btn{
   letter-spacing: 1px;
   font-weight: 300;
 }
-.titulos-footer{
+#footer > .footer-container{
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 40px;
+} 
+#footer ul{
+  margin: 0;
+}
+#footer .titulos-footer{
   text-shadow: 1px 1px 1px var(--Anaranjadito);
 }
-#img-footer{
-  width: 180px;
+#footer > .footer-container > .img-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  justify-items: center;
 }
-.links-footer{
+#footer > .footer-container > .img-container > img{
+  width: 150px;
+}
+#footer > .footer-container > .img-container > h3{
+  margin: 0;
+}
+#footer .links-footer{
   font-size: 20px;
 }
 .margen-top{
@@ -492,7 +544,6 @@ nav > .hamburger-btn{
   #nosotros > .nosotros-container > .img-container{
     grid-column: 2/3;
   }
-  
 }
 @media screen and (min-width: 768px){ 
   nav > .menu-items{
@@ -509,6 +560,14 @@ nav > .hamburger-btn{
   #contact > .contact-container > form > .boton-enviar{
     grid-column: 2 span;
   }
+
+  #footer > .footer-container{
+    grid-template-columns: minmax(250px ,1fr) 1fr minmax(215px ,1fr);
+    gap: 20px;
+  }
+  #footer > .footer-container > .img-container > img{
+    width: 165px;
+  }
 } 
 @media screen and (min-width: 850px){
   #servicios{
@@ -518,9 +577,11 @@ nav > .hamburger-btn{
   #servicios > .service-container{
     grid-template-columns: repeat(2, minmax(200px, 600px));
   }
-  #img-footer{
-    width: 200px;
-    margin-left: 30%;
+}
+@media screen and (min-width: 992px){
+  .cursos-carousel > .carousel-inner > .carousel-item{
+    height: 200px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
