@@ -355,20 +355,34 @@ nav > .hamburger-btn{
   
 }
 .cursos-carousel > .carousel-inner > .carousel-item{
-  height: 630px;
   display: grid;
   grid-template-columns: minmax(100px, 390px);
   gap: 15px;
   justify-content: center;
 }
 .cursos-carousel > .carousel-inner > .carousel-item > .course-item{
-  background-color: var(--Anaranjadito);
+  padding: 10px;
+  color: black;
+  text-align: center; 
+  font-family: var(--letraParrafos);
+  background-color: rgb(110, 209, 255);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 20px;
+  font-size: .9em;
 }
 .cursos-carousel > .carousel-inner > .carousel-item:nth-of-type(2) > .course-item{
   background-color: var(--verdeOpacoAzulado);
 }
 .cursos-carousel > .carousel-inner > .carousel-item:nth-of-type(3) > .course-item{
   background-color: var(--sombra);
+}
+.cursos-carousel > .carousel-inner > .carousel-item > .course-item > img{
+  width: 100%;
+}
+.cursos-carousel > .carousel-inner > .carousel-item > .course-item > p{
+  margin: 0;
 }
 @keyframes sombrea{
   from{
@@ -508,6 +522,12 @@ nav > .hamburger-btn{
   margin-top: 50px;
 }
 
+@media screen and (min-width: 410px){
+  .cursos-carousel > .carousel-inner > .carousel-item > .course-item{
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+  }
+}
 @media screen and (min-width: 576px){
   .index-carousel .overlay-img > p{
     font-size: 3.5em;
@@ -580,7 +600,6 @@ nav > .hamburger-btn{
 }
 @media screen and (min-width: 992px){
   .cursos-carousel > .carousel-inner > .carousel-item{
-    height: 200px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
