@@ -13,6 +13,75 @@ header{
   z-index: 9999;
   background-color: #fff;
 }
+.modal{
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.modal.hide{
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.modal > .login{
+  display: grid;
+  grid-template-columns: minmax(300px, 450px);
+  background-color: #fff;
+}
+.modal > .login > .title-container{
+  color: #fff;
+  background-color: #004489;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-self: center;
+}
+.modal > .login > .title-container h5{
+  margin: 0;
+}
+.modal > .login > .title-container i{
+  color: rgba(0, 0, 0, .5);
+  justify-self: flex-end;
+  cursor: pointer;
+}
+.modal > .login > .title-container i:hover{
+  color: #fff;
+}
+.modal > .login > .main-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+#modal-message-sent > .login > .title-container{
+  background-color: transparent;
+  text-align: end;
+  display: block;
+}
+#modal-message-sent > .login > .title-container i:hover{
+  color: var(--danger);
+}
+#modal-message-sent > .login > .message{
+  justify-items: center;
+  gap: 30px;
+}
+#modal-message-sent > .login > .message i{
+  color: var(--success);
+  font-size: 80px;
+}
+#modal-message-sent > .login > .message p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #contact-nav{
   z-index: 9999;
   border-bottom: 3px solid #faa634;
@@ -471,21 +540,28 @@ nav > .hamburger-btn{
   -webkit-filter: drop-shadow(4px 4px 3px rgb(41, 41, 41));
           filter: drop-shadow(4px 4px 3px rgb(41, 41, 41));
 }
-
+.main-contact{
+  background-image: url(../../img/background-contacto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #contact{
   font-family: 'Anton', sans-serif;
   margin-top: 23px;
 }
 #contact > h3{
   margin: 0;
-  background-color: #3cb2a2;
+  background-color: rgba(60, 178, 162, 0.75);
   color: #fff;
 }
 #contact > .contact-container{
   display: grid;
   grid-template-columns: minmax(250px, 950px);
   justify-content: center;
-  background-color: #0b6154;
+
+  background-color: rgba(11, 97, 84, 0.75);
+  /* background-color: var(--verdeOpacoAzulado); */
 }
 #contact > .contact-container > form{
   display: grid;
