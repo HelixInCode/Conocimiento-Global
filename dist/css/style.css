@@ -1,5 +1,8 @@
 :root{ /*y SUBTITULOS*/
 }
+.wow {
+  visibility: hidden;
+}
 *{
   outline: none !important;
 }

@@ -19,3 +19,7 @@ window.addEventListener('scroll', () => {
     $contactNav.classList.remove('top-nav')
   }
 })
+
+$( document ).ready(function() {
+  new WOW().init();
+});

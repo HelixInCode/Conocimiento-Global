@@ -8,6 +8,9 @@
   --letraParrafos: 'Montserrat', sans-serif;
   --letraEnlaces: 'Anton', sans-serif; /*y SUBTITULOS*/
 }
+.wow {
+  visibility: hidden;
+}
 *{
   outline: none !important;
 }
