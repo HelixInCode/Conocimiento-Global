@@ -22,7 +22,7 @@ header{
   position: relative;
   padding-top: 58px;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #333333f5;
 }
 .modal{
   z-index: 9999;
@@ -146,7 +146,7 @@ nav{
   right: 0;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #333333f5;
   min-height: 42px;
   max-height: 60px;
   transition: .2s;
@@ -161,7 +161,8 @@ nav.top-nav > .img-container{
   padding: 3px 0;
 }
 nav > .img-container{
-  color: #000;
+  color:white;
+  letter-spacing: 2px;
   display: grid;
   grid-template-columns: minmax(10px, 50px) auto;
   gap: 5px;
@@ -201,12 +202,13 @@ nav > .menu-items{
   margin: 0;
   padding: 0;
   border-radius: 10px;
-  background-color: #fff !important;
+  background-color:  #333333f5 !important;
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
   list-style: none;
   transition: .3s;
+  color: white;
 }
 nav > .menu-items > li{
   height: auto;
@@ -215,7 +217,7 @@ nav > .menu-items > li{
 }
 nav > .menu-items > li > a{
   padding: 5px 10px;
-  color: #000;
+  color: white;
   font-family: var(--letraEnlaces);
 }
 nav > .menu-items > li > a:hover{
@@ -224,6 +226,7 @@ nav > .menu-items > li > a:hover{
 }
 nav > .menu-items.hide{
   right: -50%;
+  background-color:  #333333f5;
 }
 nav > .hamburger-btn{
   z-index: 9999;
@@ -234,8 +237,8 @@ nav > .hamburger-btn{
   height: 50px;
   border: none;
   border-radius: 50%;
-  color: #fff;
-  background-color: #000;
+  color: black;
+  background-color: white;
   justify-content: center;
   align-items: center;
   transition: .3s;
@@ -297,9 +300,11 @@ nav > .hamburger-btn{
   display: grid;
   grid-template-columns: minmax(300px, 1100px);
   justify-content: center;
+  background-color: #333333f5;
+  padding-top: 40px;
 }
 #nosotros > .contenedor-subtitulo{
-  color: black;
+  color: white;
   font-family: var(--letraEnlaces);
   border-bottom: 4px solid var(--Anaranjadito);
   justify-self: center;
@@ -312,6 +317,7 @@ nav > .hamburger-btn{
   display: grid;
   grid-template-columns: minmax(300px, 650px);
   gap: 50px;
+  padding-bottom: 30px;
 }
 #nosotros > .nosotros-container > .descripcion{
   padding-top: 20px;
@@ -325,6 +331,7 @@ nav > .hamburger-btn{
   margin: 0;
   font-family: var(--letraParrafos);
   font-weight: 700;
+  color: white;
 }
 #nosotros > .nosotros-container > .descripcion p span{
   background: #faa634;
@@ -377,10 +384,11 @@ nav > .hamburger-btn{
   grid-template-columns: minmax(300px, 1200px);
   justify-content: center;
   padding: 30px;
+  background-color: #333333f5;
 }
 #servicios > .contenedor-subtitulo,
 #destacados > .contenedor-subtitulo{
-  color: black;
+  color: white;
   font-family: var(--letraEnlaces);
   border-bottom: 4px solid var(--Anaranjadito);
   justify-self: center;
